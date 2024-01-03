@@ -2,7 +2,7 @@ import pandas as pd
 from datetime import timedelta
 
 # Load the dataset
-file_path = "yearly.csv"  # Replace with your file path
+file_path = "yearly.csv"
 data = pd.read_csv(file_path)
 
 
@@ -62,5 +62,5 @@ data["Date"] = (
     + additional_times
 )
 
-# Display the updated dataframe
+# save the updated dataframe
 data[["Date"]].to_csv("output.csv", index=False)
